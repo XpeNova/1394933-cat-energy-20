@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Салтанат Айткалиева](https://up.htmlacademy.ru/adaptive/20/user/1394933).
-* Наставник: `Евгений Алипкин`.
+* Наставник: [Евгений 😸 Алипкин] (https://up.htmlacademy.ru/adaptive/20/user/38158).
 
 ---
 
