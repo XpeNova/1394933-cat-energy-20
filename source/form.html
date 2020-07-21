@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Кэт энерджи</title>
+  <title>Питание для котов Кэт энерджи</title>
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -26,8 +26,8 @@
             Каталог продукции
           </a>
         </li>
-        <li class="site-list__item site-list__item--active">
-          <a>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active">
             Подбор программы
           </a>
         </li>
@@ -35,9 +35,106 @@
     </div>
   </nav>
 </header>
+
 <main class="page-form">
-  <h1 class="visually-hidden">Подбор программы питания для котов</h1>
+
+  <div class="form-title">
+    <h1 class="form-title__lead">Подбор программы</h1>
+    <p class="form-title__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  </div>
+
+  <div class="forms">
+    <section class="form">
+      <h2 class="visually hidden">Личные данные кота</h2>
+      <form class="form__details" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>Имя:<span>*</span>
+            <input class="form__field" type="text" name="name" placeholder="Барсик"></label>
+        </p>
+        <p>
+          <label>Вес (кг):<span>*</span>
+            <input class="form__field" type="number" name="weight" placeholder="7"></label>
+        </p>
+        <p>
+          <label>Возраст (лет):
+            <input class="form__field" type="number" name="age" placeholder="7"></label>
+        </p>
+      </form>
+    </section>
+
+    <section class="form-radio">
+      <h2 class="visually hidden">Цель</h2>
+      <ul class="form-radio__list">
+        <li class="form-radio__item">
+          <label>Похудение<input class="form-radio__toggle" type="radio" name="slim" checked></label>
+        </li>
+        <li class="form-radio__item">
+          <label>Набор массы<input class="form-radio__toggle" type="radio" name="gain"></label>
+        </li>
+        <li class="form-radio__item">
+          <label>Не знаю (нужен ваш совет)<input class="form-radio__toggle" type="radio" name="advance"></label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact-form">
+      <h2 class="contact-form__title">Контактные данные (владельца кота)</h2>
+      <form class="contact-form__details" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>E-mail:<span>*</span><input class="contact-form__field" type="email" name="email"
+                                              placeholder="kuklachev@gmail.com"></label>
+          <img src="https://via.placeholder.com" width="20" height="14" alt="Иконка email">
+        </p>
+        <p>
+          <label>Телефон:<span>*</span><input class="contact-form__field" type="number"
+                                              name="tel" placeholder="8 (960) 900-60-90"></label>
+          <img src="https://via.placeholder.com" width="20" height="20" alt="Иконка tel">
+        </p>
+      </form>
+    </section>
+
+    <section class="form-text">
+      <h2 class="form-text__title">Комментарий</h2>
+      <form class="form-text__main" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label><textarea class="form-text__field" name="text"
+                            placeholder="Расскажите обо всех повАдках кота"></textarea></label>
+        </p>
+      </form>
+    </section>
+
+    <section class="form-checkbox">
+      <h2 class="form-checkbox__title">Дополнительно</h2>
+      <ul class="form-checkbox__list">
+        <li class="form-checkbox__item">
+          <label>Сахарозаменитель<input class="form-checkbox__toggle" type="checkbox" name="sweetener" checked></label>
+        </li>
+        <li class="form-checkbox__item">
+          <label>Питьевая вода<input class="form-checkbox__toggle" type="checkbox" name="water"></label>
+        </li>
+        <li class="form-checkbox__item">
+          <label>Молоко<input class="form-checkbox__toggle" type="checkbox" name="milk"></label>
+        </li>
+        <li class="form-checkbox__item">
+          <label>Витамины<input class="form-checkbox__toggle" type="checkbox" name="vitamins"></label>
+        </li>
+      </ul>
+    </section>
+    <a class="forms__send button" href="#">Отправить заявку</a>
+    <span class="forms__remark"><span>*</span> — Обязательные поля</span>
+  </div>
+
+  <section class="contacts">
+    <p class="contacts__promo">Приглашаем к сотрудничеству дилеров!</p>
+    <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <iframe class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056607!2d30.32085335153634!3d59.9387191689654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sil!4v1593515139051!5m2!1sen!2sil"
+            allowfullscreen width="320" height="362"
+            title="Офис компании по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    </iframe>
+  </section>
 </main>
+
 <footer class="page-footer">
   <div class="page-footer__wrapper">
     <a href="#" class="page-footer__logo-text logo-text">cat energy</a>
